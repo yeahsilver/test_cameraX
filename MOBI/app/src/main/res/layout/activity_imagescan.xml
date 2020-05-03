@@ -5,14 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ImageScanActivity"
-        android:layout_gravity="center"
-        android:textSize="40dp"
-        />
-
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
@@ -28,6 +20,15 @@
     </FrameLayout>
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프레임에 사진을 맞춰주세요"
+        android:textColor="#8D6AE0"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,18 +37,19 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/shoot"
-            android:layout_height="80dp"
-            android:layout_width="80dp"
-            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="50dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:elevation="10dp"
             android:hapticFeedbackEnabled="true"
             android:soundEffectsEnabled="true"
             app:backgroundTint="#8D6AE0"
-            app:fabCustomSize="100dp"
-            app:maxImageSize = "50dp"
-            android:layout_gravity="center"
+            app:fabCustomSize="80dp"
+            app:maxImageSize="30dp"
 
-            />
+            app:srcCompat="@drawable/ic_photo_camera" />
 
     </LinearLayout>
 
